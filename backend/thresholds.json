@@ -1,0 +1,39 @@
+{
+  "_note": "PROTOTYPE DEMONSTRATION RULES supplied by the DH 308 project. They are NOT SNOMED CT thresholds and have NOT been clinically validated. Values are evaluated as integers. Each band is inclusive [min, max]; null means unbounded.",
+  "glucose": {
+    "unit": "mg/dL",
+    "valid_range": [10, 700],
+    "bands": [
+      {"min": null, "max": 53,   "severity": "red"},
+      {"min": 54,   "max": 69,   "severity": "orange"},
+      {"min": 70,   "max": 79,   "severity": "yellow"},
+      {"min": 80,   "max": 180,  "severity": "normal"},
+      {"min": 181,  "max": 250,  "severity": "yellow"},
+      {"min": 251,  "max": 300,  "severity": "orange"},
+      {"min": 301,  "max": null, "severity": "red"}
+    ]
+  },
+  "heart_rate": {
+    "unit": "BPM",
+    "valid_range": [20, 250],
+    "bands": [
+      {"min": null, "max": 39,   "severity": "red"},
+      {"min": 40,   "max": 49,   "severity": "orange"},
+      {"min": 50,   "max": 59,   "severity": "yellow"},
+      {"min": 60,   "max": 100,  "severity": "normal"},
+      {"min": 101,  "max": 110,  "severity": "yellow"},
+      {"min": 111,  "max": 130,  "severity": "orange"},
+      {"min": 131,  "max": null, "severity": "red"}
+    ]
+  },
+  "spo2": {
+    "unit": "%",
+    "valid_range": [50, 100],
+    "bands": [
+      {"min": null, "max": 89,   "severity": "red"},
+      {"min": 90,   "max": 93,   "severity": "orange"},
+      {"min": 94,   "max": 95,   "severity": "yellow"},
+      {"min": 96,   "max": 100,  "severity": "normal"}
+    ]
+  }
+}

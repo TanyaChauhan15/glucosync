@@ -1,0 +1,11 @@
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+SQLAlchemy==2.0.36
+pydantic==2.10.3
+email-validator>=2.2,<3
+bcrypt==4.2.1
+alembic==1.14.0
+python-dotenv==1.0.1
+# tests
+pytest==8.3.4
+httpx==0.28.1
